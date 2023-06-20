@@ -25,7 +25,8 @@
     "mysql2": "2.3.3",
     "nyc": "15.1.0",
     "sequelize": "6.25.5",
-    "sequelize-cli": "6.4.1"
+    "sequelize-cli": "6.4.1",
+    "supertest": "^6.3.3"
   },
   "dependencies": {
     "camelcase": "6.3.0",

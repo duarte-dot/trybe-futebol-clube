@@ -1,45 +1,61 @@
-import * as sinon from 'sinon';
-import * as chai from 'chai';
-// @ts-ignore
-import chaiHttp = require('chai-http');
+// import * as sinon from 'sinon';
+// import * as chai from 'chai';
+// const request = require('supertest');
+// // @ts-ignore
+// import chaiHttp = require('chai-http');
 
-import { app } from '../app';
-import Example from '../database/models/ExampleModel';
+// import { app } from '../app';
 
-import { Response } from 'superagent';
+// import Example from '../database/models/ExampleModel';
 
-chai.use(chaiHttp);
+// import { Response } from 'superagent';
 
-const { expect } = chai;
+// import * as teamsMock from './mocks/TeamsMock';
 
-describe('Seu teste', () => {
-  /**
-   * Exemplo do uso de stubs com tipos
-   */
+// chai.use(chaiHttp);
 
-  // let chaiHttpResponse: Response;
+// const { expect } = chai;
 
-  // before(async () => {
-  //   sinon
-  //     .stub(Example, "findOne")
-  //     .resolves({
-  //       ...<Seu mock>
-  //     } as Example);
-  // });
+// describe('testando o app', () => {
+//   /**
+//    * Exemplo do uso de stubs com tipos
+//    */
 
-  // after(()=>{
-  //   (Example.findOne as sinon.SinonStub).restore();
-  // })
+//   // let chaiHttpResponse: Response;
 
-  // it('...', async () => {
-  //   chaiHttpResponse = await chai
-  //      .request(app)
-  //      ...
+//   // before(async () => {
+//   //   sinon
+//   //     .stub(Example, "findOne")
+//   //     .resolves({
+//   //       ...<Seu mock>
+//   //     } as Example);
+//   // });
 
-  //   expect(...)
-  // });
+//   // after(()=>{
+//   //   (Example.findOne as sinon.SinonStub).restore();
+//   // })
 
-  it('Seu sub-teste', () => {
-    expect(false).to.be.eq(true);
-  });
-});
+//   // it('...', async () => {
+//   //   chaiHttpResponse = await chai
+//   //      .request(app)
+//   //      ...
+
+//   //   expect(...)
+//   // });
+
+//   describe('testando as rotas', () => {
+//     it('testando a rota raiz /', async () => {
+//       const httpResponse = await request(app).get('/')
+//       expect(httpResponse.status).to.equal(200);
+//       expect(httpResponse.body).to.be.an('object');
+//       expect(httpResponse.body).to.be.deep.equal({ ok: true });
+//     });
+
+//     it('testando a rota /teams', async () => {
+//       const httpResponse = await request(app).get('/teams')
+//       expect(httpResponse.status).to.be.equal(200);
+//       expect(httpResponse.body).to.be.an('array');
+//       expect(httpResponse.body).to.be.deep.equal(teamsMock.allTeams)
+//     });
+//   });
+// });
