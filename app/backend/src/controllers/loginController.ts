@@ -6,7 +6,7 @@ async function login(req: Request, res: Response) {
 
   const response = await loginServices.login(email, password);
 
-  if (response.status === 401) { return res.status(401).json({ message: response.message }); }
+  if (response.status === 401) return res.status(401).json({ message: response.message });
 
   return res.status(response.status).json({ token: response.token });
 }

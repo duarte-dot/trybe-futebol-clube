@@ -26,6 +26,7 @@
     "nyc": "15.1.0",
     "sequelize": "6.25.5",
     "sequelize-cli": "6.4.1",
+    "sinon-express-mock": "^2.2.1",
     "supertest": "^6.3.3"
   },
   "dependencies": {
