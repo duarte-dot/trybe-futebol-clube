@@ -18,4 +18,11 @@ describe('testando a rota /teams', function () {
     expect(response.status).to.be.equal(200);
     expect(response.body).to.deep.equal(teamsMock.allTeams);
   });
+
+  it('retorna um time selecionado na rota /teams/id', async function () {
+    const response = await chai.request(app).get('/teams/1');
+
+    expect(response.status).to.be.equal(200);
+    expect(response.body).to.deep.equal(teamsMock.team1);
+  });
 });

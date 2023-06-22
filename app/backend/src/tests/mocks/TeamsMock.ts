@@ -64,3 +64,8 @@ export const allTeams = [
 		"teamName": "São Paulo"
 	}
 ]
+
+export const team1 = {
+  "id": 1,
+  "teamName": "Avaí/Kindermann"
+}
