@@ -2,15 +2,7 @@ import { Model, DataTypes } from 'sequelize';
 import db from '.';
 import TeamsModel from './TeamsModel';
 
-class MatchesModel extends Model {
-  static associate() {
-    MatchesModel.belongsTo(TeamsModel, { foreignKey: 'homeTeamId', as: 'homeTeam' });
-    MatchesModel.belongsTo(TeamsModel, { foreignKey: 'awayTeamId', as: 'awayTeam' });
-
-    TeamsModel.hasMany(MatchesModel, { foreignKey: 'homeTeamId' });
-    TeamsModel.hasMany(MatchesModel, { foreignKey: 'awayTeamId' });
-  }
-}
+class MatchesModel extends Model {}
 
 MatchesModel.init(
   {
@@ -53,5 +45,11 @@ MatchesModel.init(
     timestamps: false,
   },
 );
+
+MatchesModel.belongsTo(TeamsModel, { foreignKey: 'homeTeamId', as: 'homeTeam' });
+MatchesModel.belongsTo(TeamsModel, { foreignKey: 'awayTeamId', as: 'awayTeam' });
+
+TeamsModel.hasMany(MatchesModel, { foreignKey: 'homeTeamId' });
+TeamsModel.hasMany(MatchesModel, { foreignKey: 'awayTeamId' });
 
 export default MatchesModel;
