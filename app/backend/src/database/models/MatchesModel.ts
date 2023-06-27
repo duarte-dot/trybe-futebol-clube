@@ -2,7 +2,14 @@ import { Model, DataTypes } from 'sequelize';
 import db from '.';
 import TeamsModel from './TeamsModel';
 
-class MatchesModel extends Model {}
+class MatchesModel extends Model {
+  id!: number;
+  homeTeamId!: number;
+  homeTeamGoals!: number;
+  awayTeamId!: number;
+  awayTeamGoals!: number;
+  inProgress!: boolean;
+}
 
 MatchesModel.init(
   {
