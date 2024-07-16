@@ -1,51 +1,50 @@
-# TFC - Trybe Futebol Clube ⚽
+# TFC - Trybe Football Club ⚽
 
-Neste projeto, criei uma aplicação informativa sobre partidas e classificações de futebol, um back-end robusto, integração de APIs e bancos de dados Dockerizados.
+In this project, I created an informative application about football matches and standings, featuring a robust backend, API integrations, and Dockerized databases.
 
-## Visão Geral do Projeto
+## Project Overview
 
-O TFC é uma aplicação web que oferece informações sobre times de futebol, partidas e classificações. Ela foi construída com as seguintes características principais:
+TFC is a web application that provides information about football teams, matches, and standings. It was built with the following key features:
 
-- Desenvolvimento de um back-end dockerizado utilizando o Sequelize.
-- Implementação de uma API RESTful para fornecer dados para o front-end.
-- Integração de dados de times, partidas e classificações.
-- Implementação de autenticação de usuário com tokens.
-- Desenvolvimento de funcionalidades de atualização e finalização de partidas.
+- Development of a Dockerized backend using Sequelize.
+- Implementation of a RESTful API to provide data to the frontend.
+- Integration of team, match, and standings data.
+- Implementation of user authentication with tokens.
+- Development of functionalities for updating and finalizing matches.
 
-## Estrutura do Projeto
+## Project Structure
 
-Aqui está uma visão geral da estrutura do projeto:
+Here is an overview of the project structure:
 
-- `/app/backend`: Código-fonte do back-end.
-- `/app/frontend`: Código-fonte do front-end (parte não abordada neste README).
+- `/app/backend`: Backend source code.
+- `/app/frontend`: Frontend source code (not covered in this README).
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- Node.js: Para o desenvolvimento do servidor back-end.
-- Docker: Para a criação de contêineres para o banco de dados.
-- Sequelize: Para a modelagem de dados e interação com o banco de dados.
-- Express.js: Para a criação da API RESTful.
-- JWT (JSON Web Tokens): Para autenticação de usuário.
-- Jest: Para testes unitários e de integração.
+- Node.js: For backend server development.
+- Docker: For containerizing databases.
+- Sequelize: For data modeling and interaction with the database.
+- Express.js: For creating the RESTful API.
+- JWT (JSON Web Tokens): For user authentication.
+- Jest: For unit and integration testing.
 
-## Como Rodar o Projeto
+## Running the Project
 
-Se você deseja executar o projeto localmente, siga estas etapas:
+If you wish to run the project locally, follow these steps:
 
-1. Clone o repositório: `git clone https://github.com/seu-usuario/tfc.git`
-2. Navegue até a pasta do back-end: `cd tfc/app/backend`
-3. Instale as dependências: `npm install`
-4. Inicie o servidor: `npm start`
-5. Agora você pode acessar a API em `http://localhost:3000`.
+1. Clone the repository: `git clone https://github.com/your-username/tfc.git`
+2. Navigate to the backend folder: `cd tfc/app/backend`
+3. Install dependencies: `npm install`
+4. Start the server: `npm start`
+5. You can now access the API at `http://localhost:3000`.
 
-Lembre-se de configurar corretamente as variáveis de ambiente e o arquivo de configuração do banco de dados para que o projeto funcione localmente.
+Make sure to properly configure environment variables and the database configuration file for the project to work locally.
 
-## Aprendizados e Desafios
+## Learnings and Challenges
 
-Durante o desenvolvimento deste projeto, eu enfrentei e superei vários desafios interessantes. Alguns dos principais aprendizados incluem:
+During the development of this project, I encountered and overcame several interesting challenges. Some of the key learnings include:
 
-- Aprendizado profundo sobre o Sequelize e como criar modelos e migrações.
-- Implementação de autenticação de usuário com tokens JWT.
-- Integração de diferentes partes do projeto em um Docker Compose.
-- Testes de unidade e de integração para garantir a qualidade do código.
-
+- Deep understanding of Sequelize and how to create models and migrations.
+- Implementation of user authentication with JWT tokens.
+- Integration of different parts of the project into a Docker Compose setup.
+- Unit and integration testing to ensure code quality.
